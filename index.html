@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollería Don Gallo</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: 'Segoe UI', sans-serif;
+      background:#f4f4f4;
+      color:#222;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:#ffb703;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffb703;
+    }
+
+    .banner{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .banner-content h2{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .banner-content p{
+      font-size:20px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      background:#ffb703;
+      color:#111;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#fb8500;
+      color:white;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .title h2{
+      font-size:40px;
+      color:#d62828;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.03);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-body{
+      padding:20px;
+    }
+
+    .card-body h3{
+      margin-bottom:10px;
+      color:#d62828;
+    }
+
+    .price{
+      font-size:22px;
+      color:#fb8500;
+      font-weight:bold;
+      margin-top:15px;
+    }
+
+    .about{
+      background:#fff3cd;
+      border-radius:20px;
+      text-align:center;
+      padding:50px;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍗 Don Gallo</h1>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#about">Nosotros</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-content">
+      <h2>El Verdadero Sabor a la Brasa</h2>
+      <p>Pollo crocante, jugoso y recién salido del horno.</p>
+      <a href="#menu" class="btn">Ver Menú</a>
+    </div>
+  </section>
+
+  <section id="menu">
+
+    <div class="title">
+      <h2>Nuestros Favoritos</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-body">
+          <h3>Pollo Entero</h3>
+          <p>Incluye papas fritas, cremas y ensalada fresca.</p>
+          <div class="price">S/ 72.00</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-body">
+          <h3>Mostrito</h3>
+          <p>Pollo + chaufa especial con porción de papas.</p>
+          <div class="price">S/ 26.00</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-body">
+          <h3>Hamburguesa Brasa</h3>
+          <p>Carne artesanal, queso cheddar y papas.</p>
+          <div class="price">S/ 24.00</div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <div class="about">
+      <h2>¿Quiénes Somos?</h2>
+
+      <p>
+        En Don Gallo llevamos más de 10 años preparando
+        el mejor pollo a la brasa con recetas peruanas tradicionales,
+        ingredientes frescos y sabor incomparable.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="title">
+      <h2>Contáctanos</h2>
+    </div>
+
+    <div style="text-align:center;">
+      <p>📍 Lima, Perú</p>
+      <p>📞 +51 987 654 321</p>
+      <p>✉ pedidos@dongallo.com</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Pollería Don Gallo | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
