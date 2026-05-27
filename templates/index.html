@@ -172,41 +172,65 @@
 
     <div class="title">
       <h2>Nuestros Favoritos</h2>
+      <p style="text-align:center; color:#666;">Selecciona la cantidad y haz tu pedido</p>
     </div>
 
-    <div class="cards">
+    <form action="/pedir" method="POST">
+      
+      <div class="cards">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=800&q=80">
-
-        <div class="card-body">
-          <h3>Pollo Entero</h3>
-          <p>Incluye papas fritas, cremas y ensalada fresca.</p>
-          <div class="price">S/ 72.00</div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=800&q=80">
+          <div class="card-body">
+            <h3>Pollo Entero</h3>
+            <p>Incluye papas fritas, cremas y ensalada fresca.</p>
+            <div class="price">S/ 72.00</div>
+            
+            <div style="margin-top: 15px; display: flex; gap: 10px; align-items: center;">
+              <label for="pollo">Cantidad:</label>
+              <input type="number" id="pollo" name="cantidad_pollo" value="0" min="0" style="width: 60px; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+          </div>
         </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
+          <div class="card-body">
+            <h3>Mostrito</h3>
+            <p>Pollo + chaufa especial con porción de papas.</p>
+            <div class="price">S/ 26.00</div>
+            
+            <div style="margin-top: 15px; display: flex; gap: 10px; align-items: center;">
+              <label for="mostrito">Cantidad:</label>
+              <input type="number" id="mostrito" name="cantidad_mostrito" value="0" min="0" style="width: 60px; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
+          <div class="card-body">
+            <h3>Hamburguesa Brasa</h3>
+            <p>Carne artesanal, queso cheddar y papas.</p>
+            <div class="price">S/ 24.00</div>
+            
+            <div style="margin-top: 15px; display: flex; gap: 10px; align-items: center;">
+              <label for="hamburguesa">Cantidad:</label>
+              <input type="number" id="hamburguesa" name="cantidad_hamburguesa" value="0" min="0" style="width: 60px; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
-
-        <div class="card-body">
-          <h3>Mostrito</h3>
-          <p>Pollo + chaufa especial con porción de papas.</p>
-          <div class="price">S/ 26.00</div>
-        </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <button type="submit" class="btn" style="border: none; cursor: pointer; font-size: 18px;">
+          🛒 Enviar Pedido
+        </button>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
+    </form>
 
-        <div class="card-body">
-          <h3>Hamburguesa Brasa</h3>
-          <p>Carne artesanal, queso cheddar y papas.</p>
-          <div class="price">S/ 24.00</div>
-        </div>
-      </div>
-
-    </div>
 
   </section>
 
